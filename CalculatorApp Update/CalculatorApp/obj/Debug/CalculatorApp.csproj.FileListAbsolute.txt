@@ -1,0 +1,30 @@
+H:\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+H:\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe
+H:\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.pdb
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csprojAssemblyReference.cache
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.exe
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.pdb
+H:\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.pdb
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csprojAssemblyReference.cache
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.exe
+\\scc.maricopa.edu\home\aus2137029\Desktop\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.pdb
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.csprojAssemblyReference.cache
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.cache
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.csproj.CoreCompileInputs.cache
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.exe
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\obj\Debug\CalculatorApp.pdb
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\bin\Debug\CalculatorApp.exe
+\\scc.maricopa.edu\home\AUS2137029\Desktop\CalculatorApp Update\CalculatorApp\bin\Debug\CalculatorApp.pdb
