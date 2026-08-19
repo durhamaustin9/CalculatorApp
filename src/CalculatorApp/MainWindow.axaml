@@ -1,0 +1,165 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="CalculatorApp.MainWindow"
+        Title="QuickCalc"
+        Width="318"
+        Height="526"
+        MinWidth="318"
+        MinHeight="526"
+        MaxWidth="318"
+        MaxHeight="526"
+        CanResize="False"
+        CanMaximize="False"
+        WindowStartupLocation="CenterScreen"
+        WindowDecorations="None"
+        ExtendClientAreaToDecorationsHint="True"
+        TransparencyLevelHint="Transparent"
+        Background="Transparent">
+
+  <Window.Styles>
+    <Style Selector="Button.key">
+      <Setter Property="Height" Value="62" />
+      <Setter Property="MinWidth" Value="0" />
+      <Setter Property="Margin" Value="4" />
+      <Setter Property="HorizontalAlignment" Value="Stretch" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="31" />
+      <Setter Property="Background" Value="#5E6761" />
+      <Setter Property="Foreground" Value="#FFFFFF" />
+      <Setter Property="FontFamily" Value="SF Pro Display, Inter, Arial" />
+      <Setter Property="FontSize" Value="25" />
+      <Setter Property="FontWeight" Value="SemiBold" />
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+      <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+    <Style Selector="Button.key:pointerover">
+      <Setter Property="Background" Value="#737C76" />
+    </Style>
+    <Style Selector="Button.key:pressed">
+      <Setter Property="Background" Value="#89918C" />
+    </Style>
+    <Style Selector="Button.key.utility">
+      <Setter Property="Background" Value="#9BA29E" />
+      <Setter Property="Foreground" Value="#FFFFFF" />
+      <Setter Property="FontSize" Value="22" />
+    </Style>
+    <Style Selector="Button.key.utility:pointerover">
+      <Setter Property="Background" Value="#B1B6B3" />
+    </Style>
+    <Style Selector="Button.key.operator">
+      <Setter Property="Background" Value="#FF9500" />
+      <Setter Property="Foreground" Value="#FFFFFF" />
+      <Setter Property="FontSize" Value="31" />
+      <Setter Property="FontWeight" Value="Regular" />
+    </Style>
+    <Style Selector="Button.key.operator:pointerover">
+      <Setter Property="Background" Value="#FFAA2B" />
+    </Style>
+    <Style Selector="Button.key.operator.active">
+      <Setter Property="Background" Value="#FFFFFF" />
+      <Setter Property="Foreground" Value="#FF9500" />
+    </Style>
+    <Style Selector="Button.traffic">
+      <Setter Property="Width" Value="14" />
+      <Setter Property="Height" Value="14" />
+      <Setter Property="MinWidth" Value="0" />
+      <Setter Property="MinHeight" Value="0" />
+      <Setter Property="Margin" Value="0,0,8,0" />
+      <Setter Property="Padding" Value="0" />
+      <Setter Property="BorderThickness" Value="0" />
+      <Setter Property="CornerRadius" Value="7" />
+    </Style>
+  </Window.Styles>
+
+  <Border Margin="7"
+          Padding="14,12,14,16"
+          CornerRadius="24"
+          Background="#19241E"
+          BoxShadow="0 12 30 0 #66000000">
+    <Grid RowDefinitions="38,112,*">
+      <Grid Grid.Row="0"
+            ColumnDefinitions="Auto,Auto,Auto,*,Auto"
+            WindowDecorationProperties.ElementRole="TitleBar">
+        <Button Grid.Column="0"
+                Classes="traffic"
+                Background="#FF5F57"
+                ToolTip.Tip="Close"
+                WindowDecorationProperties.ElementRole="User"
+                Click="OnCloseClick" />
+        <Button Grid.Column="1"
+                Classes="traffic"
+                Background="#FEBC2E"
+                ToolTip.Tip="Minimize"
+                WindowDecorationProperties.ElementRole="User"
+                Click="OnMinimizeClick" />
+        <Border Grid.Column="2"
+                Width="14"
+                Height="14"
+                Margin="0,0,8,0"
+                CornerRadius="7"
+                Background="#4A544E" />
+        <Border Grid.Column="4"
+                Padding="10,5"
+                CornerRadius="14"
+                BorderBrush="#647069"
+                BorderThickness="1">
+          <TextBlock Text="C#"
+                     FontFamily="SF Mono, Menlo, monospace"
+                     FontSize="11"
+                     FontWeight="SemiBold"
+                     Foreground="#DCE2DE" />
+        </Border>
+      </Grid>
+
+      <Grid Grid.Row="1" Margin="6,0,6,8" RowDefinitions="Auto,*">
+        <TextBlock x:Name="ExpressionText"
+                   Grid.Row="0"
+                   HorizontalAlignment="Right"
+                   Foreground="#839089"
+                   FontFamily="SF Mono, Menlo, monospace"
+                   FontSize="12"
+                   Text="Ready" />
+        <TextBlock x:Name="DisplayText"
+                   Grid.Row="1"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Bottom"
+                   Foreground="#F6F8F7"
+                   FontFamily="SF Pro Display, Inter, Arial"
+                   FontSize="58"
+                   FontWeight="Light"
+                   Text="0"
+                   TextAlignment="Right" />
+      </Grid>
+
+      <Grid Grid.Row="2"
+            ColumnDefinitions="*,*,*,*"
+            RowDefinitions="*,*,*,*,*">
+        <Button Grid.Row="0" Grid.Column="0" Classes="key utility" Content="⌫" Click="OnBackspaceClick" />
+        <Button Grid.Row="0" Grid.Column="1" Classes="key utility" Content="AC" Click="OnClearClick" />
+        <Button Grid.Row="0" Grid.Column="2" Classes="key utility" Content="%" Click="OnPercentClick" />
+        <Button x:Name="DivideButton" Grid.Row="0" Grid.Column="3" Classes="key operator" Content="÷" Tag="Divide" Click="OnOperatorClick" />
+
+        <Button Grid.Row="1" Grid.Column="0" Classes="key number" Content="7" Tag="7" Click="OnDigitClick" />
+        <Button Grid.Row="1" Grid.Column="1" Classes="key number" Content="8" Tag="8" Click="OnDigitClick" />
+        <Button Grid.Row="1" Grid.Column="2" Classes="key number" Content="9" Tag="9" Click="OnDigitClick" />
+        <Button x:Name="MultiplyButton" Grid.Row="1" Grid.Column="3" Classes="key operator" Content="×" Tag="Multiply" Click="OnOperatorClick" />
+
+        <Button Grid.Row="2" Grid.Column="0" Classes="key number" Content="4" Tag="4" Click="OnDigitClick" />
+        <Button Grid.Row="2" Grid.Column="1" Classes="key number" Content="5" Tag="5" Click="OnDigitClick" />
+        <Button Grid.Row="2" Grid.Column="2" Classes="key number" Content="6" Tag="6" Click="OnDigitClick" />
+        <Button x:Name="SubtractButton" Grid.Row="2" Grid.Column="3" Classes="key operator" Content="−" Tag="Subtract" Click="OnOperatorClick" />
+
+        <Button Grid.Row="3" Grid.Column="0" Classes="key number" Content="1" Tag="1" Click="OnDigitClick" />
+        <Button Grid.Row="3" Grid.Column="1" Classes="key number" Content="2" Tag="2" Click="OnDigitClick" />
+        <Button Grid.Row="3" Grid.Column="2" Classes="key number" Content="3" Tag="3" Click="OnDigitClick" />
+        <Button x:Name="AddButton" Grid.Row="3" Grid.Column="3" Classes="key operator" Content="+" Tag="Add" Click="OnOperatorClick" />
+
+        <Button Grid.Row="4" Grid.Column="0" Classes="key number" Content="⁺⁄₋" FontSize="20" Click="OnToggleSignClick" />
+        <Button Grid.Row="4" Grid.Column="1" Classes="key number" Content="0" Tag="0" Click="OnDigitClick" />
+        <Button Grid.Row="4" Grid.Column="2" Classes="key number" Content="." Click="OnDecimalClick" />
+        <Button Grid.Row="4" Grid.Column="3" Classes="key operator" Content="=" Click="OnEqualsClick" />
+      </Grid>
+    </Grid>
+  </Border>
+</Window>
